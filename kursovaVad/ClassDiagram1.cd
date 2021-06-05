@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="kursovaVad.SQLConnections">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAgAAAAAAAAIRAAAgAAAACAAAAAAA=</HashCode>
+      <FileName>SQLConnections.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursovaVad.SQLQuries">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAABAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>SQLQuries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursovaVad.Program">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursovaVad.Form1">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>/yCDxAAABSAGQBGQEgCgYFBCIPg/MCFHMD0BgCgBBLA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
