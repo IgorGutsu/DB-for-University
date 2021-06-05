@@ -199,64 +199,57 @@ namespace kursovaVad
                 MessageBox.Show("Оберіть рядок для видалення!");
             }
         }
-
+        private void Dg_cellClick(TextBox[] tb, DataGridView dg)
+        {
+            for (int i = 0; i <= tb.Length; i++){
+                tb[i].Text = dg.CurrentRow.Cells[i].Value.ToString();
+            }
+        }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            TextBox[] tb = { textBox1, textBox2, textBox3, textBox4 };
+            Dg_cellClick(tb, dataGridView1);
         }
 
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox8.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-            textBox7.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-            textBox6.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-            textBox5.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
+            TextBox[] tb = { textBox8, textBox7, textBox6, textBox5 };
+            Dg_cellClick(tb, dataGridView2);
         }
 
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox12.Text = dataGridView3.CurrentRow.Cells[0].Value.ToString();
-            textBox11.Text = dataGridView3.CurrentRow.Cells[1].Value.ToString();
-            textBox10.Text = dataGridView3.CurrentRow.Cells[2].Value.ToString();
+            TextBox[] tb = { textBox12, textBox11, textBox10};
+            Dg_cellClick(tb, dataGridView3);
         }
 
 
         private void dataGridView4_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox14.Text = dataGridView4.CurrentRow.Cells[0].Value.ToString();
-            textBox13.Text = dataGridView4.CurrentRow.Cells[1].Value.ToString();
-            textBox9.Text = dataGridView4.CurrentRow.Cells[2].Value.ToString();
+            TextBox[] tb = { textBox14, textBox13, textBox9 };
+            Dg_cellClick(tb, dataGridView4);
         }
 
 
 
         private void dataGridView5_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox17.Text = dataGridView5.CurrentRow.Cells[0].Value.ToString();
-            textBox16.Text = dataGridView5.CurrentRow.Cells[1].Value.ToString();
-            textBox15.Text = dataGridView5.CurrentRow.Cells[2].Value.ToString();
+            TextBox[] tb = { textBox17, textBox16, textBox15 };
+            Dg_cellClick(tb, dataGridView5);
         }
 
 
         private void dataGridView6_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox21.Text = dataGridView6.CurrentRow.Cells[0].Value.ToString();
-            textBox20.Text = dataGridView6.CurrentRow.Cells[1].Value.ToString();
-            textBox19.Text = dataGridView6.CurrentRow.Cells[2].Value.ToString();
-            textBox18.Text = dataGridView6.CurrentRow.Cells[3].Value.ToString();
+            TextBox[] tb = { textBox21, textBox20, textBox19, textBox18 };
+            Dg_cellClick(tb, dataGridView6);
         }
 
         private void dataGridView7_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox26.Text = dataGridView7.CurrentRow.Cells[0].Value.ToString();
-            textBox25.Text = dataGridView7.CurrentRow.Cells[1].Value.ToString();
-            textBox24.Text = dataGridView7.CurrentRow.Cells[2].Value.ToString();
-            textBox23.Text = dataGridView7.CurrentRow.Cells[3].Value.ToString();
-            textBox22.Text = dataGridView7.CurrentRow.Cells[4].Value.ToString();
+            TextBox[] tb = { textBox26, textBox25, textBox25, textBox23, textBox22 };
+            Dg_cellClick(tb, dataGridView7);
         }
 
         
@@ -289,6 +282,11 @@ namespace kursovaVad
         private void підключитисьДоБДToolStripMenuItem_Click(object sender, EventArgs e)
         {
             sq1.Query("students", dataGridView1);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

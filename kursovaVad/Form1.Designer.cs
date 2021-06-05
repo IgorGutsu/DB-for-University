@@ -41,7 +41,6 @@ namespace kursovaVad
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -116,6 +115,7 @@ namespace kursovaVad
             this.button39 = new System.Windows.Forms.Button();
             this.label30 = new System.Windows.Forms.Label();
             this.dataGridView11 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             this.remove_bttn = new System.Windows.Forms.Button();
             this.edit_bttn = new System.Windows.Forms.Button();
             this.add_bttn = new System.Windows.Forms.Button();
@@ -156,6 +156,7 @@ namespace kursovaVad
             this.dataGridView1.Size = new System.Drawing.Size(724, 530);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button2
             // 
@@ -275,16 +276,6 @@ namespace kursovaVad
             this.textBox1.Size = new System.Drawing.Size(137, 20);
             this.textBox1.TabIndex = 5;
             this.textBox1.Tag = "";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(10, 606);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 32);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Показати таблицю";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // tabPage2
             // 
@@ -1005,6 +996,16 @@ namespace kursovaVad
             this.dataGridView11.Name = "dataGridView11";
             this.dataGridView11.Size = new System.Drawing.Size(836, 529);
             this.dataGridView11.TabIndex = 15;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(10, 606);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 32);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Показати таблицю";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // remove_bttn
             // 
